@@ -1,0 +1,328 @@
+/* Setting default font to website */
+
+body {
+    font-family: 'Kadwa', Calibri, serif;
+    margin: 0px;
+    width: 100%;
+
+    
+}
+
+/* Adding style to navbar */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 4.5rem;
+    background-color:#fff;
+    box-shadow: 0px 4px 4px;
+    z-index: 10;
+
+}
+
+
+    #left-header {
+        height: inherit;
+    }
+
+    /* For AMBU logo */
+
+    #left-header img {
+        height: 4.75rem;
+        margin-left: 4px;
+        transition: 0.3s;
+
+    }
+
+    /* for navbar option */
+
+    .right-header{
+        display: flex;
+        justify-content: space-evenly;
+        
+        
+    }
+
+        /* For each navbar option like home, about etc */
+        .right-header-element {
+            margin-right: 2rem;
+            margin: 1rem;
+            padding: 0.5rem;
+            font-weight: bold;
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-shadow: 2px 2px 1px rgb(194, 183, 183);
+        }
+
+        /* Language style */
+
+        .right-header-element select {
+            border-radius: 0.5rem;
+            padding: 3px 9px 3px 9px;
+            box-shadow: 2px 2px 1px black;
+            border: none;
+            background-color: lightgrey;
+            text-shadow: inherit;
+        }
+
+        .right-header-element a:hover{
+            background-color: #e85a4f;
+            padding: 0.5rem;
+            color: white;
+            border-radius: 0.7rem;
+            text-shadow: 2px 2px 1px rgb(199, 198, 198);
+
+        }
+
+        .right-header-element abbr {
+            text-decoration: none;
+
+        }
+
+        /* Profile pic */
+
+        .pic {
+            height: 1.75rem;
+            border-radius: 1.25rem;
+            border-width: 0.125rem;
+            border-style: solid;
+            border-color: rgb(129, 129, 191);
+        }
+    
+/* Main body divided to to sub body using flex */
+
+#content {
+    display: flex;
+    margin-top: 4.5rem;
+    transition: 0.3s;
+    justify-content: space-between;
+    background-image: url(images/operationBG.png);
+    background-size: cover;
+    height: 106vh;
+    width: 100vw;
+
+}
+
+    /* Left side of main body  */
+
+    .body-left {
+        width: 100%;
+        margin: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    /* AMBU style */
+
+        .body-left h1 {
+            font-size: 7rem;
+            color: #f8eeee;
+            line-height: 5rem;
+            text-shadow: -2px 2px 2px black;
+            
+    
+        }
+
+        /* Tagline */
+
+        .body-left p {
+            font-size: 2.5rem;
+            color: #f8eeee;
+            line-height: 3rem;
+            text-shadow: -2px 2px 2px black
+
+        }
+
+        /* Download button */
+
+        .body-left button {
+            font-size: 2.3rem;
+            margin-left: 1rem;
+            padding: 10px;
+            border-radius: 2rem;
+            margin-top: 4vh;
+        } 
+
+            .body-left button .download-app {
+                font-size: 2.3rem;
+                color: #e85a4f;
+                text-shadow: 2px 2px 2px black;
+
+
+            }
+
+            /*  adding android to download button */
+
+            .android img {
+                width: 2.3rem;
+            }
+
+    /* Right part of main body */
+
+    .body-right {
+        background-color: rgb(100, 227, 214, 0.8);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+    }
+
+        /* Styling login form */
+
+        .login {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-form{
+            width: 100%;
+            margin-left: 10%;
+            align-items: center;
+            margin-top: 1rem;    
+        }
+
+
+        .input-icons i {
+            position: absolute;
+        }
+
+        .input-icons {
+            width: 100%;
+            margin-top:1rem;
+        }
+
+        .icon {
+            padding: 0.625rem;
+            color: black;
+            min-width: 2.5rem;
+            text-align: center;
+        }
+
+        .input-field {
+            width: 60%;
+            padding: 0.625rem;
+            text-align: center;
+            background-color: #d9d9d9;
+            border-radius: 1rem;
+            border: none;
+            font-size: 1.1rem;
+        }
+
+            /* Styling input placeholder */
+
+            .login-form input::placeholder{
+                font-size: 1.5rem;
+                color: rgb(68, 64, 64);
+                text-shadow: 2px 2px 2px black;
+
+            }
+
+        /* Sign-in button */
+
+        .login-form .signin {
+            margin-top: 7vh;
+        }
+
+            .login-form .signin button {
+                width: 65%;
+                height: 3rem;
+                font-size: 1.5rem;
+                background-color:#20b038;
+                border-radius: 1.5rem;
+                color: black;
+                font-weight: bold;
+
+            }
+
+        /* Because we care part */
+
+        .theme {
+            background-color: #fff;
+            position: fixed;
+            right: 0;
+            width: 4rem;
+            margin-top: 0.5rem;
+            border-radius: 1rem 0rem 0rem 1rem;
+            background-color:#20b038;
+
+        }
+
+            .theme p {
+                /* text-orientation: upright; */
+                /* writing-mode: sideways-lr; */
+                writing-mode: vertical-rl;
+                margin: 70% 0% 70% 0%;
+                rotate: 180deg;
+                text-align: center;
+                padding: 4px 0px 0px 0px;
+                color: white;
+                font-weight: bold;
+                font-size: 1.8rem;
+                
+            }
+
+    /* other login option using flex */
+
+    .other-login-options {
+        display: flex;
+        justify-content: space-around;
+        line-height: 2rem;
+
+    }
+
+        /* styling images of google and facebook */
+
+        .google-icon img, .facebook-icon img{
+            width: 2.3rem;
+            margin-left: 7rem;
+            margin-bottom: -1rem;
+        }
+
+        .login-google , .login-facebook {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.5rem;    
+
+            
+        }
+
+    /* signin and emergency button */
+
+    .other-options {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2.2rem;
+        margin-left: 2rem;
+        font-weight: bold;
+
+        
+    }
+
+    /* Styling chat */
+
+    .chat img {
+        margin: 0.5rem;
+        width: 3.1rem
+        
+    }
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+

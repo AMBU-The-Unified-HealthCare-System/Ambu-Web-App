@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+
+    <!-- Creating Navbar -->
+
+    <div id="header">
+
+        <!-- Creating left side of navbar that contain AMBU logo -->
+
+        <div id="left-header">
+            <abbr title="AMBU logo"><a href="#"> <img src="images/logo.png" alt="AMBU Logo" id="logo"> </a></abbr>
+        </div>
+
+        <!-- Creating right side of navbar that contain navigation option -->
+
+        <div class="right-header"> 
+
+                <!-- Creating Nav option and adding a tag to them -->
+
+            <div class="right-header-element">
+                <a href="#"> <abbr title="HOME">HOME</abbr> </a>
+            </div>
+            <div class="right-header-element">
+                <a href="#"> <abbr title="ABOUT"> ABOUT</> </abbr>
+            </div>
+            <div class="right-header-element">
+                <a href="#"> <abbr title="SERVICES">SERVICES</abbr>  </a>
+            </div>
+
+            <!-- Creating dropdown list for language -->
+
+            <div class="right-header-element">
+                <select name="language" id="language" >
+                    <option value="default-language">Language</option>
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+
+                </select>
+            </div>
+
+            <!-- Adding profile pic in right most part -->
+
+            <div class="  right-header-element profile">
+                <a href="#"><i class='fa fa-user-circle-o fa-lg'></i></a>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- Creating container to store content -->
+
+    <div id="content">
+
+        <!-- It contain AMBU, Tag line and download apk button-->
+
+        <div class="body-left">
+
+            <h1>AMBU</h1> 
+
+            <p>The Unified Health Care and Management System</p>
+
+            <!-- Creating download button and style -->
+
+            <button style="display: flex; 
+                            justify-content: space-around;
+                            align-items: center; width: 20rem;">
+
+                <div class="android"> <img src="images/android.png" alt="android"> </div> 
+                <div class="download-app"> Download Apk </div>
+
+            </button>
+        </div>
+
+        <!-- Creating right part that contain login form, sign-in button, other option to login and options to chat -->
+
+        <div class="body-right">
+
+            <!-- Creating login form part and right part-->
+
+            <div class="login">
+
+                <!-- Creating Input fields for mobile no. and otp  -->
+
+                <div class="login-form">
+                    <center>
+                    <form>
+
+                        <h2 style="font-size: 3rem; margin-top: 0.9rem; margin-bottom: 0.9rem;">Login</h2>
+
+                        <div class="input-icons">
+                            <i class="fa fa-user icon" ></i>
+                            <input class="input-field" id="input-field"
+                                type="text"
+                                placeholder="Mobile No. /Email">
+                        </div>
+            
+            
+                        <div class="input-icons">
+                            <i class="fa fa-key icon"></i>
+                            <input class="input-field" id="input-field"
+                                type="password"
+                                placeholder="OTP">
+                        </div>
+
+                        <!-- Adding sign-in button -->
+
+                        <div class="signin">
+                            <button>
+                                Sign-In
+                            </button>
+                    </form>
+                </center>
+            </div>
+
+                <!-- Creating right part of login and adding style -->
+
+                <div class="theme">
+                    <p>Because We Care !</p> 
+                </div>
+            </div>
+            <div style="display: flex; 
+                        align-items: center; 
+                        justify-content: space-evenly;
+                        margin: 1rem;
+                        margin-top: 5vw;
+
+                        line-height: 1rem;    
+                        "  >
+                <p> 
+                    <hr style="width:50%; 
+                                background-color: black; 
+                                text-align:left; 
+                                margin-left: 2rem; 
+                                margin-right: 2rem;
+                                height: 2px; 
+                                border-width: 0px;">
+
+                    <span style="font-size: 2rem;">or</span>
+
+                    <hr style="width:50%; 
+                            background-color: black; 
+                            text-align:right; 
+                            margin-left: 2rem; 
+                            margin-right: 2rem;
+                            height: 2px; 
+                            border-width: 0px;" >
+                </p> 
+                
+            </div>
+
+            <!-- Container that contain other option to login -->
+
+            <div class="other-login-options">
+
+                <!-- Option to login with google -->
+
+                <div class="login-google">
+                    <div class="google-icon">
+                        <a href="#"><img src="images/google.png" alt="google-icon"></a>
+                    </div>
+                    <br>
+                    Continue with Google
+                </div>
+
+                <!-- Option to login with facebook -->
+
+                <div class="login-facebook">
+                    <div class="facebook-icon"> 
+                        <a href="#"><img src="images/facebook.png" alt="facebook-icon"> </a>
+                    </div> 
+                    <br>
+                    Continue with Facebook
+                </div>
+
+            </div>
+
+            <!-- Other options -->
+            <div class="other-options">
+                <a href="#">Sign-in</a>
+                |
+                <a href="#">Emergency</a>
+            </div>
+
+            <!-- Chat options -->
+
+            <div class="chat" style="display:flex; 
+                                    flex-direction: row; 
+                                    justify-content: end;
+                                    align-items: center; 
+                                    margin-right: 0.5rem;">
+                
+                <div>
+                    <a href="#"><img src="images/whatsapp.png" alt="whatsapp"></a>
+                </div>
+                <div style="box-shadow: 0 4px 10px rgb(0 0 0 / 0.6);">
+                    <a href="#"><img src="images/chats.png" alt="chat"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            document.getElementById("header").style.height = "3.4rem";
+            document.getElementById("logo").style.height = "3.8rem";
+            document.getElementById("content").style.marginTop = "3.4rem";
+
+        } else {
+            document.getElementById("header").style.height = "4.5rem";
+            document.getElementById("logo").style.height = "4.75rem";
+            document.getElementById("content").style.marginTop = "4.5rem";
+
+        }
+        } 
+
+        window.onload = function() {
+        document.getElementById('input-field').value = '';
+        }
+    </script>
+    
+</body>
+</html>
