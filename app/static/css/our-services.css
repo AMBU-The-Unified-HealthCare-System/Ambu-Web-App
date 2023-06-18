@@ -1,0 +1,793 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* css code starts from here */
+
+  body {
+    font-family: "Jaldi", sans-serif;
+  }
+  
+  #container {
+    background-image: linear-gradient(to right, #65e3d7, #4995ee);
+    margin-top: 70px;
+    width: auto;
+  }
+  
+  /* Nav Bar */
+  
+  .top-nav {
+    box-shadow: 0px 2px 10px black;
+  }
+  
+  .bgc {
+    height: 30px;
+    padding: 10px;
+    transition: 0.4s;
+  }
+  
+  .ambu-logo-img {
+    height: auto;
+    margin-top: 10px;
+    width: 180px;
+  }
+
+  .ambu-logo-img img {
+    width: 165px;
+    height: auto;
+  }
+  
+  
+  .ambu-logo-img img:hover {
+    cursor: pointer;
+  }
+  
+  .menu-button {
+    margin-right: 40px;
+  }
+  
+  .top-nav {
+    align-items: center;
+    background-color: #00baf0;
+    background: white;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    justify-content: space-between;
+    left: 0;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10000;
+  }
+  
+  .menu {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  abbr {
+    text-decoration: none;
+  }
+  
+  .menu li {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  ul form select:hover {
+    cursor: pointer;
+  }
+  
+  .menu .link:hover {
+    background-color: rgb(228, 222, 222);
+    border-radius: 5px;
+    height: 23px;
+    scale: 1.3;
+    transition: 0.5s;
+  }
+  
+  .form-section select {
+    height: 20px;
+    width: 110px;
+  }
+  
+  .profile-img {
+    height: 50px;
+    margin: 28px 40px 0px 30px;
+    width: 50px;
+  }
+  
+  .profile-img:hover {
+    cursor: pointer;
+  }
+  
+  .menu > li {
+    margin: 20px 10px;
+    overflow: hidden;
+  }
+  
+  .menu-button-container {
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 30px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    background-color: black;
+    border-radius: 2px;
+    display: block;
+    height: 4px;
+    position: absolute;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    width: 30px;
+  }
+  
+  .menu-button::before {
+    content: "";
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: "";
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+  /* media query for mobile devices for nav Bar */
+  
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+  
+    .profile-img {
+      display: none;
+    }
+    .menu {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      margin-top: 45px;
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .menu .link:hover {
+      background-color: black;
+    }
+  
+    .bgc {
+      height: 30px;
+      padding: 10px;
+      transition: 0.4s;
+    }
+  
+    .logo img{
+      height: auto;
+      padding-left: 2px;
+      padding-top: 8px;
+      width: 130px;
+    }
+
+    .ambu-logo-img {
+      margin-top: 4px;
+    }
+  
+    .menu-one {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      margin-top: 25px;
+      position: absolute;
+      top: 26px;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .menu li a {
+      color: white;
+    }
+  
+    .menu > li a:hover {
+      color: cyan;
+      scale: 1.1;
+      transition: 0.6s;
+    }
+    #menu-toggle ~ .menu li {
+      border: 0;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 2.5em;
+      padding: 1.5rem 0 0 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+  }
+  
+  /* Side Quote */
+  
+  .side-quote {
+    background-color: #048888;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    height: 210px;
+    justify-content: center;
+    left: 0;
+    padding: 18px 8px 4px 0px;
+    position: fixed;
+    top: 100px;
+    width: 20px;
+    writing-mode: vertical-lr;
+  }
+  
+  /* main body css code */
+  
+  /* Main Header section */
+  
+  .main-text {
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px grey;
+  }
+  
+  .main-text h1 {
+    font-size: 40px;
+  }
+  
+  .main-text p {
+    font-style: italic;
+    padding-top: 10px;
+    text-shadow: 1px 1px 2px grey;
+  }
+  
+  /* Ambulance card-Containers */
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    left: 0px;
+    margin-top: 30px;
+    position: relative;
+    width: 98.5vw;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 5px;
+    flex: 20%;
+    height: auto;
+    margin: 40px;
+    max-width: 500px;
+  }
+  
+  .card:hover {
+    box-shadow: 2px 2px black;
+    scale: 1.025;
+    transition: 1s;
+  }
+  
+  .card img {
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    margin: auto;
+    padding: 40px 0px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .card img:hover {
+    cursor: pointer;
+    scale: 1.2;
+    transition: 0.6s;
+  }
+  
+  /* Making extra edits for different cards */
+  
+  .container-1 img {
+    padding-bottom: 80px;
+  }
+  
+  .container-2 img {
+    height: 250px;
+    padding-bottom: 10px;
+    width: 230px;
+  }
+  
+  .container-3 img {
+    padding-bottom: 80px;
+  }
+  
+  .container-4 img {
+    height: 190px;
+    padding-bottom: 80px;
+  }
+  
+  .container-5 img {
+    padding-bottom: 90px;
+  }
+  
+  .container-6 img {
+    height: 230px;
+    width: 230px;
+  }
+  
+  .card-text {
+    background-color: #ece4e4;
+  }
+  
+  .card-text p:hover {
+    font-size: 12px;
+    transition: 0.7s;
+    
+  }
+  
+  .card-text h3 {
+    padding: 20px 0px 10px 10px;
+  }
+  
+  .card-text p {
+    padding: 0px 0px 10px 10px;
+  }
+  
+  .card-text p:hover {
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.7s;
+  }
+  
+  /* booking button and price list button */
+  
+  .book-price {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  
+  .book-price .btn button {
+    background-color: #a0d755;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    width: 140px;
+  }
+  
+  .cards-container .book-price .price button {
+    background-color: #ffc4c8;
+    border: none;
+    height: 40px;
+    left: 85;
+    position: absolute;
+    right: 0;
+    width: 70px;
+  }
+  
+  .book-price .btn:hover {
+    cursor: pointer;
+  }
+  
+  .book-price button:hover {
+    cursor: pointer;
+  }
+  
+  .book-price .btn:hover {
+    color: white;
+    font-size: 22px;
+    scale: 1.1;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 10000;
+  }
+  /* Main body part ends here */
+  
+  /* footer section css code */
+  
+  .footer {
+    background-image: linear-gradient(#0f2831, #37414c, #5361a6);
+    position: relative;
+  }
+  
+  /* footer header */
+  
+  .footer-header {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ambu-footer-quote h3{
+    color: white;
+    font-size: 0.8em;
+    font-size: 10px;
+    margin: 8px 0px 8px 0px;
+    text-align: center;
+  }
+  
+  /* download from appstore and playstore*/
+  
+  .download {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  
+  .download img {
+    margin-right: 0px;
+  }
+  
+  .download .appstore img {
+    height: auto;
+    width: 200px;
+  }
+  
+  .download .playstore {
+    margin-top: 63px;
+  }
+  .download .playstore img {
+    height: 65px;
+    width: 180px;
+  }
+  
+  /* copy right section*/
+  
+  .copyright {
+    color: white;
+    font-size: 1vw;
+    padding: 5px;
+  }
+  
+  .contact-us img:hover {
+    cursor: pointer;
+  }
+  
+  .connect img:hover {
+    cursor: pointer;
+    scale: 1.3;
+    transition: 0.6s;
+  }
+  
+  .download img:hover {
+    cursor: pointer;
+  }
+  
+  /* different ViewPorts media queries */
+  
+  /* for mobile */
+  
+  @media only screen and (max-width: 600px) {
+    .footer-header img {
+      height: 20px;
+      margin: 4px 3px 0px 0px;
+      width: 20px;
+    }
+  
+    .footer-header .ambu-footer-quote h3 {
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+  
+    /* us section for mobile devices */
+  
+    .us {
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px 5px;
+    }
+  
+    .us a {
+      text-decoration: none;
+         color: white;
+         padding-left: 5px;
+    }
+  
+    .us p {
+      font-size: 0.7em;
+    }
+  
+    .us p a:hover {
+      box-shadow: 1px 1px  black;
+      scale: 2;
+      transition: 0.4s;
+    }
+  
+    /* Know us section for mobile devices */
+  
+    .us .know-us {
+      flex: 25%;
+    }
+  
+    .us h2 {
+      font-size: 0.9em;
+    }
+  
+    .us img {
+      height: 20px;
+      margin-right: 5px;
+      width: 20px;
+    }
+  
+    /* services section for mobile devices */
+  
+    .us .services {
+      flex: 25%;
+    }
+  
+    /* contact us section for mobile devices */
+  
+    .us .contact-us {
+      flex: 40%;
+    }
+  
+     .address abbr {
+      display: flex;
+      margin: 0px 0px;
+    }
+  
+    .mail abbr {
+      display: flex;
+      margin: 0px 0px;
+    }
+  
+    .phone abbr {
+      display: flex;
+      margin: 0px 0px;
+    }
+  
+    .phone img {
+      margin-top: 5px;
+    }
+  
+    /* connect from us section for mobile devices */
+  
+    .connect p {
+      color: white;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+  
+    .connect .icons {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+  
+    .connect img {
+      width: 25px;
+      height: auto;
+      
+    }
+  
+    /* download our app section for mobile devices */
+  
+    .download .appstore img {
+      border-radius: 5px;
+      height: 38px;
+      margin-right: 10px;
+      margin-top: 7px;
+      width: 120px;
+    }
+  
+    .download .playstore {
+      margin-top: 0px;
+    }
+  
+    .download .playstore img {
+      border-radius: 4px;
+      height: 46px;
+      width: 125px;
+    }
+  
+    .copyright {
+      font-size: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) {
+    .footer-header img {
+      height: 30px;
+      margin: 12px 3px 0px 0px;
+      width: 30px;
+    }
+  
+    .footer-header .ambu-footer-quote h3 {
+      font-size: 30px;
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
+  
+    /* contact us section for viewport bigger than mobile */
+  
+    .us {
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px 5px;
+    }
+  
+    .us a {
+      color: white;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+  
+    .us p {
+      font-size: 1em;
+    }
+  
+    .us p a:hover {
+      box-shadow: -1px 2px 1px black;
+      scale: 2;
+      transition: 0.4s;
+    }
+  
+    .us .know-us {
+      flex: 35%;
+    }
+  
+    .us h2 {
+      font-size: 1.2em;
+    }
+  
+    .us img {
+      height: 20px;
+      margin-right: 5px;
+      width: 20px;
+    }
+  
+    .us .services {
+      flex: 35%;
+    }
+  
+    .us .contact-us {
+      flex: 35%;
+    }
+  
+     .address abbr {
+      display: flex;
+      margin: 0px 0px;
+    }
+  
+    .mail abbr {
+      display: flex;
+      margin: 0px 0px;
+    }
+  
+    .phone abbr {
+      display: flex;
+      margin: 0px 0px;
+    }
+  
+    .phone img {
+      margin-top: 5px;
+    }
+  
+  
+    .connect p {
+      color: white;
+      font-size: 1.4em;
+      letter-spacing: 2px;
+      margin: 10px 0px;
+      text-align: center;
+    }
+  
+    .connect .icons {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 5px;
+    }
+  
+  
+    .connect img {
+      height: auto;
+      width: 30px;
+    }
+  
+    .connect .first-icon {
+      margin: 0px 40px;
+    }
+  
+    .connect .second-icon {
+      margin: 0px 40px;
+    }
+  
+    .connect .third-icon {
+      margin: 0px 40px;
+    }
+  
+    .connect .fourth-icon {
+      margin: 0px 40px;
+    }
+  
+    .download .appstore img {
+      border-radius: 5px;
+      height: 38px;
+      margin-right: 10px;
+      margin-top: 7px;
+      width: 120px;
+    }
+  
+    .download .playstore {
+      margin-top: 0px;
+    }
+  
+    .download .playstore img {
+      border-radius: 4px;
+      height: 46px;
+      width: 125px;
+    }
+  
+    .copyright {
+      font-size: 15px;
+    }
+  }
+
+  /* CSS Code Ends here */
+  
