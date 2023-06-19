@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Kadwa:wght@700&display=swap');
+
+body {
+    margin: 0px;
+    width: 100%;
+    
+    
+}
+
+/* Navigation bar */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+    align-items: center;
+    position: fixed;
+    right:0;
+    top: 0;
+    height: 4.5rem;
+    background-color:#fff;
+    box-shadow: 4px 2px 8px ;
+    z-index: 10;
+    width: 100%;
+     
+   
+
+}
+
+
+#left-header {
+    height: inherit;
+}
+
+ /* AMBU logo */
+#left-header img {
+    height: 4.75rem;
+    margin-left: 4px;
+    transition: 0.3s;
+}
+
+/* Right Section of navbar*/
+.right-header{
+   
+    justify-content: space-evenly;  
+    display: flex;      
+}
+
+/* Navbar Options */
+.right-header-element {
+    margin-right: 2rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'Jaldi',sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;            
+}
+.profile:hover{
+  scale: 2.0;
+}
+
+/* Language */
+.right-header-element select {
+    border-radius: 0.5rem;
+    padding: 3px 9px 3px 9px;
+    box-shadow: 2px 2px 1px black;
+    border: none;
+    background-color: lightgrey;
+    text-shadow: inherit;
+    cursor: pointer;
+}
+
+.right-header-element abbr {
+    text-decoration: none;
+}
+.right-header-element abbr:hover{
+    background-color: #cecece;
+    padding: .4rem;
+}
+
+
+    
+ /* Header Section */
+#content {
+    display: flex;
+    margin-top: 4.5rem;
+    transition: 0.5s;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/img3.jpg);
+    background-size: cover;
+    right: 0;
+    
+   
+
+}
+
+/* Header Section Left Part */
+.hoeff:hover{
+    
+    cursor: pointer;
+}
+.leftp {
+    width: 100%;
+    margin: 2rem;
+    margin-top: 3rem;
+}
+
+/* AMBU */
+.leftp h1 {      
+    font-weight: bolder;
+    
+    color: #f8eeee;
+    text-shadow: 2px 2px 2px rgb(207, 45, 45);  
+    font-size: 7rem;
+    line-height: 5rem;
+      
+}
+
+/* Unified health care... */
+.leftp p {
+    font-size: 2.5rem;
+    color: #f8eeee;
+    line-height: 3rem;
+    text-shadow: -2px 2px 2px black
+}
+
+/* Download button */
+
+
+.leftp button {
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    padding: 10px;
+    border-radius: 2rem;
+    margin-top: 4vh;
+} 
+
+.leftp button .download-app {
+    font-size: 2.3rem;
+    color: #e85a4f;
+    text-shadow: 2px 2px 2px black;                
+}
+.android img {
+    width: 2.3rem;
+}
+
+/* Header Section right part  */
+/* Emergency text  */
+
+
+
+
+
+.rightp {
+    background-color: rgb(100, 227, 214, 0.8);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;        
+}
+  /* Calling button  */
+  .callbtn{
+    margin-top: 5rem ;
+    color: #cfbbbb;
+    border: none;
+    height: 15rem;
+    width:  15rem;
+    border-radius: 50rem;
+   
+    
+     margin-left: -4rem;
+     padding: 2px;
+}  
+.img4{
+    margin-top: 1rem ;
+    height: 10rem;
+     max-width:  10rem;
+    border: none;
+    margin-left: 0.5rem; 
+   
+      } 
+
+   .cal{
+    margin-top: 5rem ;
+    color: #F0E7E7;
+    border: none;
+    height: 10rem;
+    width:  10rem;
+    border-radius: 50%;
+   
+     margin-left: 10rem;
+}   
+.call{
+   
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Kadwa',serif;
+    font-size: 3rem;
+    margin-left: -4rem;
+    font-weight: bold;
+ }
+
+/* Your health is your priority */
+.slogan {
+    background-color: #fff;
+    position: fixed;
+    
+    right:0;
+    width: 4rem;
+    margin-top: -24.5rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    background-color:#20b038;            
+}
+.slogan p {
+    writing-mode: vertical-rl;
+    margin: 70% 0% 70% 0%;
+    rotate: 180deg;
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem; 
+    font-family: 'Kadwa',serif;               
+}
+       
+/* Sign up and login buttons */
+.btn{
+    margin-top: 1rem;
+    
+    
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Kadwa',serif;
+    font-size: 2rem;
+    margin-left: -1rem;
+    font-weight: bold;
+}
+
+ /* Chatbox image */
+.chatbox img {
+    margin-top: 15rem;
+    width: 4.3rem;
+    margin-right: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   
+}
+
+.chatbox :hover{
+    width:6rem;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
