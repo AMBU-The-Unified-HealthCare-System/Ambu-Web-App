@@ -10,3 +10,8 @@ get_index_bp = Blueprint('index', __name__)
 def index():
            # Render index.html
            return render_template('index.html')
+
+@get_Sign_Up.route('/Sign_Up')
+def index():
+          # Render Sign_Up.html
+          return render_template('Sign_Up.html')

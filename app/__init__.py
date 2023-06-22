@@ -8,5 +8,9 @@ def create_app():
     
     # Register the blueprints for endpoints in app instance
     app.register_blueprint(controllers.get_index_bp)
-
+    app.register_blueprint(controllers.get_Sign_Up)
+    
     return app
+
+
+
