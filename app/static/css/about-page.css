@@ -1,0 +1,675 @@
+/* Setting default font to website */
+
+body {
+    background-color: white;
+    display: block;
+    font-family: "Kadwa", Calibri, serif;
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Adding style to navbar */
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar styling */
+header {
+    position: relative;
+}
+/* navbar basic styling */
+
+#navbar {
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 4px;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding: 0 2% 0 0.5%;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    width: 100%;
+    z-index: 10;
+}
+
+#logo img {
+    transition: 0.3s;
+}
+
+#logo1 {
+    height: 4.5rem;
+    margin-top: 1rem;
+}
+
+.right-header {
+    align-items: center;
+    display: flex;
+    gap: 0.9rem;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    gap: 2.5rem;
+    text-shadow: 2px 2px 1px rgb(194, 183, 183);
+}
+/* hover effect on big screens */
+.links a:hover {
+    background-color: #808080;
+    border-radius: 0.7rem;
+    color: white;
+    padding: 0.25rem;
+    text-shadow: 2px 2px 1px rgb(199, 198, 198);
+}
+
+/* Language change style */
+.right-header-element select {
+    background-color: lightgrey;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 1px black;
+    padding: 3px 9px 3px 9px;
+    text-shadow: inherit;
+}
+
+.pic {
+    border-color: rgb(129, 129, 191);
+    border-radius: 1.25rem;
+    border-style: solid;
+    border-width: 0.125rem;
+    height: 2rem;
+}
+
+.toggle_btn {
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+}
+
+/* Drop down list style which is visible on mobile */
+.dropdown_menu {
+    border-radius: 10px;
+    display: none;
+    height: 0px;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: fixed;
+    right: 1.5rem;
+    top: 4.5rem;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 200px;
+    z-index: 10;
+}
+
+.dropdown_menu li {
+    align-items: center;
+    display: flex;
+    font-size: 2.5vh;
+    justify-content: center;
+    padding: 0.7rem;
+}
+
+.dropdown_menu.open {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    height: fit-content;
+}
+
+.dropdown_menu li {
+    color: #3d4347;
+    position: relative;
+}
+
+/* Hover effect on drop down list */
+.dropdown_menu li:hover {
+    font-size: 500%;
+}
+
+.dropdown_menu li:after {
+    background-color: #535759;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 0 40% 4% 40%;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    width: 20%;
+}
+
+.dropdown_menu li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* media query to make nav bar responsive */
+@media (max-width: 850px) {
+    #navbar .links,
+    #navbar .language {
+        display: none;
+    }
+
+    #navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .dropdown_menu a {
+        color: white;
+    }
+}
+
+@media (max-width: 500px) {
+    .dropdown_menu {
+        right: 2.5%;
+        width: 90%;
+    }
+}
+
+.content {
+    background-color: white;
+    margin-top: 4.5rem;
+}
+/* Title of the page style */
+.phrase {
+    align-items: center;
+    background-color: #2c2e71;
+    border-radius: 1rem 1rem 0 0;
+
+    display: flex;
+    height: 25vh;
+    justify-content: space-evenly;
+    margin: 0 2.5% 0 2.5%;
+    width: 95%;
+}
+
+.title {
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+    line-height: 6vh;
+    text-align: center;
+    z-index: 2;
+}
+
+/* About section style */
+.about-section {
+    align-items: center;
+    background-color: #e7e8f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+/* heading style */
+.about-section h1 {
+    color: #2c2e71;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+/* paragraph style */
+.about-section p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* paragraph style */
+.about-p1 {
+    color: #2c2e71;
+    font-size: 3.5vh;
+    line-height: 4vh;
+    margin: 0;
+    width: 95%;
+}
+
+/* paragraph style */
+.about-p2 {
+    color: #97989e;
+    font-size: 2.8vh;
+    line-height: 3.75vh;
+    width: 95%;
+}
+
+.story-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+/* heading style */
+.story-section h1 {
+    color: #0b063e;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.path {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+}
+
+.story-content {
+    border-radius: 2rem;
+    border-style: solid;
+    height: max-content;
+    padding: 0.5rem;
+    padding-top: 0;
+    text-align: center;
+    width: 40vw;
+}
+
+/* paragraph style */
+.story-content p {
+    font-size: 1.7vh;
+    line-height: 2.5vh;
+}
+
+.why-us {
+    align-items: center;
+    background-color: #0b063e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+/* heading style */
+.why-us h1 {
+    color: #fff;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+/* paragraph style */
+.why-us p {
+    color: #605d82;
+    display: flex;
+    font-size: 2.8vh;
+    justify-content: center;
+    line-height: 3.75vh;
+    margin: 0;
+
+    text-align: center;
+}
+
+.meet-team {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+/* heading style */
+.meet-team h1 {
+    color: #0b063e;
+    font-size: 5vh;
+    font-weight: bold;
+    line-height: 5.5vh;
+}
+
+.meet-team p,
+h1 {
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* paragraph style */
+.meet-team-p {
+    color: #605d82;
+    font-size: 2.8vh;
+    line-height: 3.75vh;
+    margin: 0;
+}
+
+/* social media profile styling */
+.linked-section {
+    display: flex;
+    overflow: auto;
+    padding: 1.5vh;
+}
+/* individual social media profile styling */
+
+.profile {
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1vw;
+    padding: 2.5vw;
+}
+
+.profile-pic img {
+    border-radius: 0.5rem;
+    width: 15vw;
+}
+
+.username {
+    font-size: 2.5vw;
+}
+
+.social-handles {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1rem;
+}
+
+.social-handles img {
+    align-items: center;
+    margin-left: 1rem;
+    width: 4vw;
+}
+
+/* adding Shine effect on social media profile pic*/
+.hover1 figure {
+    position: relative;
+}
+.hover1 figure::before {
+    background: -webkit-linear-gradient(
+        left,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+    );
+    content: "";
+    display: block;
+    height: 93.5%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+}
+
+.hover1 figure:hover::before {
+    -webkit-animation: shine 1.5s;
+    animation: shine 1.5s;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+}
+
+.achieved {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.achieved .badges {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* paragraph style */
+.badges p {
+    font-size: 2.5vw;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* heading style */
+.badges h2 {
+    color: black;
+    font-size: 3vw;
+}
+
+.badges img {
+    width: 5vw;
+}
+
+.download-app {
+    align-items: center;
+    display: flex;
+    font-size: 2.2vw;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.download-app p,
+input,
+button {
+    margin-left: 1.5rem;
+}
+
+.download-app input {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 2.5vw;
+    height: 2.75vw;
+    padding: 0.5rem;
+    width: 23vw;
+
+    /* border-color: #0b063e; */
+}
+
+.download-app input::placeholder {
+    font-size: 2.3vw;
+    text-align: center;
+}
+
+.download-app button {
+    background-color: #182942;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 2.4vw;
+    height: 5vw;
+    margin-left: 4vw;
+    margin-right: 1vw;
+    padding: 0.5vh 1vh 0.5vh 1vh;
+}
+
+/* Box animation that is used in social media profile and icons */
+.box {
+    transition: 0.7s;
+}
+.box:hover {
+    box-shadow: 2px 2px 2px #000;
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+/* Footer style */
+.footer {
+    background-image: linear-gradient(#0f2831, #37414c, #5361a6);
+    color: white;
+    margin-bottom: -15px;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+ul {
+    font-size: 1.5vw;
+}
+
+.footer-options {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+}
+
+.footer-options div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.apk {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.social-contact {
+    margin-left: 2rem;
+    width: 3.75vw;
+}
+
+@media (max-width: 650px) {
+    .social-contact {
+        margin-left: 2rem;
+        width: 3.5vh;
+    }
+}
+
+.know-us h1,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* download button style */
+.apk button {
+    border-radius: 0.5rem;
+    display: flex;
+    padding: 1.25vw;
+    margin-top: 20px;
+}
+
+button span {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+/* making links white */
+.know-us a {
+    color: white;
+}
+
+.services a {
+    color: white;
+}
+
+.contact-us a {
+    color: white;
+}
+
+figure {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+/* adding hover and animations in footer */
+.footer a:hover {
+    font-size: 125%;
+}
+
+a {
+    color: #3d4347;
+    display: inline-block;
+    position: relative;
+}
+
+.footer a:after {
+    background-color: #535759;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    width: 100%;
+}
+
+.footer a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* to remove up and down arrow in input tag */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/about-page.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Website Icon/  -->
+  <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='/assets/about-page-images/logo1.png')}}">
+
+  <!-- Font Awesome 6.4.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>About</title>
+</head>
+
+<body>
+
+  <!-- Creating responsive Navbar -->
+  <!-- The header section contains a logo, navigation links, a language selection dropdown, and a profile picture. It also has a toggle button for a dropdown menu on smaller screens. -->
+  <header>
+
+
+    <div id="navbar">
+
+      <!-- left side of header that contain Logo -->
+      <div id="logo">
+        <a href="#"><img src="{{url_for('static', filename='/assets/about-page-images/logo.png')}}" alt=""
+            id="logo1"></a>
+      </div>
+
+      <!-- right side header that contain home, about, services and profile pic options -->
+      <div class="right-header">
+
+        <div>
+          <ul class="links right-header-element">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </div>
+
+        <!-- language changing option -->
+
+        <div class="right-header-element language">
+          <select name="language" id="language">
+            <option value="default-language">Language</option>
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+
+          </select>
+        </div>
+
+        <!-- profile pic -->
+        <div class="right-header-element">
+          <abbr title="Pic"><img class="pic"
+              src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg"></abbr>
+        </div>
+
+        <!-- ham menu  -->
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- div for ham menu -->
+    <div class="dropdown_menu">
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </header>
+
+
+  <!-- Content to be display on the wed page -->
+  <!-- The content section includes different divisions such as "About AMBU," "Our Story," "Why Choose Us?," "Meet Our Team," "Achievements," and a section to download the app. -->
+
+  <div class="content">
+
+    <!-- Title of page -->
+    <div class="phrase">
+
+
+      <!-- Title of the page div -->
+      <div class="title">
+        <abbr title="Faster, Ontime and Believer Did you mean AMBU">
+          <p>
+            Faster, Ontime and Believer <br>
+            Did you mean AMBU
+          </p>
+        </abbr>
+      </div>
+
+
+    </div>
+
+
+    <!-- About Ambu section -->
+
+    <div class="about-section">
+
+      <h1>About AMBU</h1>
+      <p class="about-p1">
+        “India's Premier Provider of Top-of-the-Line Ambulance Services for All Patients”.
+      </p>
+      <p class="about-p2">
+        We pride ourselves on having India's top-notch ambulance facilities, offering comprehensive and
+        exceptional ambulance services to patients in need. Our commitment lies in providing unified and
+        seamless ambulance services to ensure the highest level of care for all individuals.
+      </p>
+
+    </div>
+
+
+    <!-- Story section -->
+    <div class="story-section">
+      <h1>Our Story</h1>
+      <div>
+        <!-- individual div for different stories -->
+
+        <div class="path">
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}idea.png" alt="" style="width: 25vw;">
+          </div>
+
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}location icon.png" alt=""
+              style="width: 6vh;">
+          </div>
+
+          <div class="story-content">
+            <p>Hi my name is vishesh i am making this so that i can test it <br>Hi my name is vishesh i am
+              making this so that i can test itHi my name is vishesh i am making this so that i can test
+              itHi my name is vishesh i am making this so that i can test it</p>
+          </div>
+        </div>
+
+        <div class="path">
+          <div class="story-content">
+            <p>Hi</p>
+          </div>
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}location icon.png" alt=""
+              style="width: 6vh;">
+          </div>
+
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}process.png" alt=""
+              style="width: 25vw;">
+          </div>
+        </div>
+
+        <div class="path">
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}route.png" alt=""
+              style="width: 25vw;">
+          </div>
+
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}location icon.png" alt=""
+              style="width: 6vh;">
+          </div>
+
+          <div class="story-content">
+            <p>Hi</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- why us section -->
+
+    <div class="why-us">
+      <h1>Why Choose US ?</h1>
+      <p>
+        Choosing AMBU means choosing excellence, compassion, and peace of mind. Our mission is to provide
+        exceptional ambulance services that make a positive difference in the lives of those we serve. Join us
+        on this journey as we redefine medical transportation standards and set a benchmark for excellence in
+        the industry.
+      </p>
+    </div>
+
+
+    <!-- meet our team section -->
+
+    <div class="meet-team">
+
+      <h1>Meet <br> Our Team</h1>
+      <p class="meet-team-p">
+        At AMBU, we are proud to have a team that not only possesses exceptional skills but also shares a common
+        vision: to make a positive impact on the lives of our patients. Our collective dedication to excellence,
+        compassion, and continuous improvement sets us apart.
+      </p>
+    </div>
+
+    <!-- team member horizontal social media profiles -->
+    <div class="linked-section">
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile box">
+        <div class="profile-pic hover1">
+          <figure> <img src="{{url_for('static', filename='/assets/about-page-images/')}}unnamed.jpg" alt=""></figure>
+        </div>
+        <div class="username">
+          <abbr title="Vishesh"> Vishesh </abbr>
+        </div>
+        <div class="social-handles">
+          <div>
+            <a href="#"><abbr title="Linkedin"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+          <div>
+            <a href="#"><abbr title="Twitter"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+                  class="box"></abbr></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- achievements section -->
+    <div class="achievements">
+
+      <!-- what we have achieved -->
+      <div class="achieved">
+        <div class="badges">
+          <img src="{{url_for('static', filename='/assets/about-page-images/')}}happy logo.png" alt="">
+          <h2><abbr title=9K+> 9K+ </abbr></h2>
+          <p><abbr title="Happy Customer"> Happy Customer </abbr></p>
+        </div>
+        <div class="badges">
+
+          <img src="{{url_for('static', filename='/assets/about-page-images/')}}red light.png" alt="">
+          <h2 class="effect-shine"><abbr title="10K+">10K+</abbr></h2>
+          <p><abbr title="Used Ambulance"> Used Ambulance </abbr></p>
+        </div>
+        <div class="badges">
+          <img src="{{url_for('static', filename='/assets/about-page-images/')}}location icon.png" alt="">
+          <h2><abbr title="1000+"> 1000+ </abbr></h2>
+          <p><abbr title="Cities"> Cities </abbr></p>
+        </div>
+      </div>
+
+      <div>
+        <hr style="width:55%">
+      </div>
+
+      <!-- download app section -->
+      <div class="download-app">
+        <div>
+          <p>Get the link to download our App </p>
+        </div>
+        <div>
+          <input type="number" name="Phone-no" id="" min="6000000000" max="9999999999" placeholder="Enter Phone Number"
+            inputmode="numeric" maxlength="10" size="10" value="numeric"
+            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        </div>
+        <div>
+          <abbr title="Send Link"><button>Send Link</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- responsive footer -->
+
+  <div class="footer">
+
+    <!-- heading in the footer -->
+
+    <h1 style="font-size: 4vw; margin: 0;">
+      <img src="{{url_for('static', filename='/assets/about-page-images/')}}indian-map.svg" alt="India map"
+        style="width:4vw"> &nbsp; India's First
+      Unified Health Care
+      Software
+    </h1>
+
+    <!-- options inside footer - Know-us, services, connect, contact-us -->
+
+    <div class="footer-options">
+
+      <!-- know us footer  -->
+
+      <div class="know-us">
+        <h2>
+          <abbr title="Know US">
+            Know US
+          </abbr>
+        </h2>
+        <ul>
+          <li><a href="#"><abbr title="Home">Home</abbr></a> </li>
+          <li><a href="#"><abbr title="Profile">Profile</abbr></a></li>
+          <li><a href="#"><abbr title="About us">About us</abbr></a></li>
+          <li><a href="#"><abbr title="Services">Services</abbr></a></li>
+        </ul>
+      </div>
+
+      <!-- services footer  -->
+
+      <div class="services">
+        <h2>
+          <abbr title="Services">
+            Services
+          </abbr>
+        </h2>
+        <ul>
+
+          <li><a href="#"><abbr title="BLS Ambulance">BLS Ambulance</abbr></a></li>
+          <li><a href="#"><abbr title="PLS Ambulance">PLS Ambulance</abbr></a></li>
+          <li><a href="#"><abbr title="Mortality Ambulance">Mortality Ambulance</abbr></a></li>
+          <li><a href="#"><abbr title="ALS Ambulance">ALS Ambulance</abbr></a></li>
+
+        </ul>
+      </div>
+
+      <!-- connect footer  -->
+
+      <div class="connect">
+        <h2>
+          <abbr title="Connect With Us">
+            Connect With Us
+          </abbr>
+        </h2>
+
+        <ul>
+
+        </ul>
+      </div>
+
+      <!-- connect us footer  -->
+
+      <div class="contact-us">
+        <h2>
+          <abbr title="Contact Us">
+            Contact Us
+          </abbr>
+        </h2>
+        <ul style="max-width: 400px;">
+
+          <li style="display: flex; align-items: center;">
+            <div> <abbr title="Location"><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}location icon.png" alt=""
+                  style="width:3.5vw; margin-right: 1.5rem;"> </abbr></div>
+            <div> <a href="#"><abbr title="XYZ ABC Technology Business Incubation Utter Pradesh India">XYZ
+                  ABC Technology Business Incubation Uttar Pradesh India</abbr></a></div>
+          </li>
+
+          <li style="display: flex; align-items: center;">
+            <div><abbr title="Mail"><img src="{{url_for('static', filename='/assets/about-page-images/')}}gmail.svg"
+                  alt="" style="width:3.5vw; margin-right: 1.5rem;">
+              </abbr></div>
+            <div><a href="#"> <abbr title="ambu272008@gmail.com">ambu272008@gmail.com</abbr> </a> </div>
+          </li>
+
+          <li style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <div><abbr title="Phone No."><img
+                  src="{{url_for('static', filename='/assets/about-page-images/')}}phone-volume-solid.svg" alt=""
+                  style="width:3.5vw; margin-right: 1.5rem;"> </abbr></div>
+            <div>
+              <a href="#"> <abbr title="9856473456"> 9856473456 <br></abbr> </a>
+              <a href="#"> <abbr title="6885647375">6885647375</abbr> </a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- social Media footer -->
+
+    <div style="margin-top: 0">
+      <div style="display: flex; justify-content: center; font-size: 2.75vw; font-weight: bold;">
+        <p style="margin: 0;">Connect With US</p>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 2vw; ">
+        <a href="#">
+          <abbr title="Instagram">
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}instagram.svg" alt=""
+              class="social-contact box">
+          </abbr>
+        </a>
+        <a href="#">
+          <abbr title="Whatsapp">
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}whatsapp.png" alt=""
+              class="social-contact box">
+          </abbr>
+        </a>
+        <a href="#">
+          <abbr title="Twitter">
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}devicon_twitter.png" alt=""
+              class="social-contact box">
+          </abbr>
+        </a>
+        <a href="#">
+          <abbr title="Linkedin">
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}logos_linkedin-icon.png" alt=""
+              class="social-contact box">
+          </abbr>
+        </a>
+      </div>
+    </div>
+
+    <!-- Download button -->
+
+    <div class="apk">
+      <abbr title="Download Now !">
+        <button>
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}apple.svg" alt="" style="width: 5vw;">
+          </div>
+          <div>
+            <p style="padding: 0; margin: 0; font-size: 2vw;"> Download On The <br> <span>App Store</span>
+            </p>
+          </div>
+        </button>
+      </abbr>
+      <abbr title="Download Now !">
+        <button>
+          <div>
+            <img src="{{url_for('static', filename='/assets/about-page-images/')}}play-store.svg" alt=""
+              style="width: 5vw;">
+          </div>
+          <div>
+            <p style="padding: 0; margin: 0; font-size: 2vw;"> Get It On <br> <span>Google play</span></p>
+          </div>
+        </button>
+      </abbr>
+    </div>
+
+    <!-- copyright -->
+
+    <div>
+      <p style="margin-left: 1rem;"> <a href="#" style="color: white;"><abbr title="Click to Know More">
+            copyright@2023 AMBU organization </abbr></a> </p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+
+    // to make navbar size change on scroll
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        document.getElementById("navbar").style.height = "3.4rem";
+        document.getElementById("logo1").style.height = "3.8rem";
+
+      } else {
+        document.getElementById("navbar").style.height = "4rem";
+        document.getElementById("logo1").style.height = "4.5rem";
+
+      }
+    }
+
+
+    // to make ham menu responsive
+
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+        ? "fa-solid fa-xmark"
+        : "fa-solid fa-bars"
+    }
+
+    // to clear input field on refresh and on clicking on any thing
+
+    window.onload = function () {
+      document.getElementById('input-field').value = '';
+    }
+
+  </script>
+
+</body>
+
+</html>
