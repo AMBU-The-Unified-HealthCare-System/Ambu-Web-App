@@ -71,7 +71,7 @@ header {
 }
 
 #logo1 {
-    height: 4.5rem;
+    height: 10.5rem;
     margin-top: 1rem;
 }
 
@@ -157,11 +157,6 @@ header {
 .dropdown_menu li {
     color: #3d4347;
     position: relative;
-}
-
-/* Hover effect on drop down list */
-.dropdown_menu li:hover {
-    font-size: 500%;
 }
 
 .dropdown_menu li:after {
@@ -499,48 +494,6 @@ h1 {
     width: 5vw;
 }
 
-.download-app {
-    align-items: center;
-    display: flex;
-    font-size: 2.2vw;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.download-app p,
-input,
-button {
-    margin-left: 1.5rem;
-}
-
-.download-app input {
-    background-color: #d9d9d9;
-    border: none;
-    border-radius: 0.2rem;
-    font-size: 2.5vw;
-    height: 2.75vw;
-    padding: 0.5rem;
-    width: 23vw;
-
-    /* border-color: #0b063e; */
-}
-
-.download-app input::placeholder {
-    font-size: 2.3vw;
-    text-align: center;
-}
-
-.download-app button {
-    background-color: #182942;
-    border-radius: 0.3rem;
-    color: white;
-    font-size: 2.4vw;
-    height: 5vw;
-    margin-left: 4vw;
-    margin-right: 1vw;
-    padding: 0.5vh 1vh 0.5vh 1vh;
-}
-
 /* Box animation that is used in social media profile and icons */
 .box {
     transition: 0.7s;
@@ -556,6 +509,7 @@ button {
     background-image: linear-gradient(#0f2831, #37414c, #5361a6);
     color: white;
     margin-bottom: -15px;
+    padding-top: 0.75vw;
 }
 
 h2 {
@@ -564,6 +518,10 @@ h2 {
 
 ul {
     font-size: 1.5vw;
+}
+
+li {
+    padding: 0.5vw;
 }
 
 .footer-options {
@@ -634,9 +592,6 @@ figure {
     padding: 0;
 }
 /* adding hover and animations in footer */
-.footer a:hover {
-    font-size: 125%;
-}
 
 a {
     color: #3d4347;

@@ -37,7 +37,7 @@
 
       <!-- left side of header that contain Logo -->
       <div id="logo">
-        <a href="#"><img src="{{url_for('static', filename='/assets/about-page-images/logo.png')}}" alt=""
+        <a href="#"><img src="{{url_for('static', filename='/assets/about-page-images/logo0.png')}}" alt=""
             id="logo1"></a>
       </div>
 
@@ -418,24 +418,6 @@
         </div>
       </div>
 
-      <div>
-        <hr style="width:55%">
-      </div>
-
-      <!-- download app section -->
-      <div class="download-app">
-        <div>
-          <p>Get the link to download our App </p>
-        </div>
-        <div>
-          <input type="number" name="Phone-no" id="" min="6000000000" max="9999999999" placeholder="Enter Phone Number"
-            inputmode="numeric" maxlength="10" size="10" value="numeric"
-            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-        </div>
-        <div>
-          <abbr title="Send Link"><button>Send Link</button>
-        </div>
-      </div>
     </div>
 
   </div>
@@ -645,11 +627,11 @@
     function scrollFunction() {
       if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
         document.getElementById("navbar").style.height = "3.4rem";
-        document.getElementById("logo1").style.height = "3.8rem";
+        document.getElementById("logo1").style.height = "9rem";
 
       } else {
         document.getElementById("navbar").style.height = "4rem";
-        document.getElementById("logo1").style.height = "4.5rem";
+        document.getElementById("logo1").style.height = "10rem";
 
       }
     }
