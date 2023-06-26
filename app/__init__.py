@@ -7,6 +7,7 @@ def create_app():
     app.config['DEBUG'] = True
 
     # Register the blueprints for endpoints in app instance
+    app.register_blueprint(controllers.get_index_bp)
     app.register_blueprint(controllers.get_about_page)
 
     return app
