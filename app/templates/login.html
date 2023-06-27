@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/static/css/login.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Website Icon/  -->
+	<link rel="icon" type="image/x-icon"
+		href="{{url_for('static', filename='/assets/login-images/')}}')}}logo1.png')}}">
+
+	<!-- Font Awesome 6.4.0 CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Login</title>
+</head>
+
+<body>
+
+	<!-- Creating Navbar -->
+
+	<div id="navbar">
+
+		<!-- left side of header that contain Logo -->
+		<div id="logo">
+			<a href="#"><img src="{{url_for('static', filename='/assets/login-images/')}}logo.png" alt=""
+					id="logo1"></a>
+		</div>
+
+		<!-- right side header that contain home, about, services and profile pic options -->
+		<div class="right-header">
+
+			<div>
+				<ul class="links right-header-element">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+				</ul>
+			</div>
+
+			<!-- language changing option -->
+
+			<div class="right-header-element language">
+				<select name="language" id="language">
+					<option value="default-language">Language</option>
+					<option value="english">English</option>
+					<option value="hindi">Hindi</option>
+
+				</select>
+			</div>
+
+			<!-- profile pic -->
+			<div class="right-header-element">
+				<abbr title="Pic"><img class="pic"
+						src="{{url_for('static', filename='/assets/login-images/')}}unnamed.jpg"></abbr>
+			</div>
+
+			<!-- ham menu  -->
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+	</div>
+
+	<!-- div for ham menu -->
+	<div class="dropdown_menu">
+		<div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+	</header>
+
+	<!-- Creating container to store content -->
+
+	<div class="theme">
+		<p>Because We Care !</p>
+	</div>
+
+	<div id="content">
+
+		<!-- It contain AMBU, Tag line and download apk button-->
+
+		<div class="body-left">
+
+			<h1>AMBU</h1>
+
+			<p>The Unified Health Care and Management System</p>
+
+			<!-- Creating download button and style -->
+			<div class="download-btn">
+				<button>
+
+					<div class="android"> <img src="{{url_for('static', filename='/assets/login-images/')}}android.png"
+							alt="android"> </div>
+					<div class="download-app"> Download Apk </div>
+
+				</button>
+			</div>
+		</div>
+
+		<!-- Creating right part that contain login form, sign-in button, other option to login and options to chat -->
+
+		<div class="body-right">
+
+			<!-- Creating login form part and right part-->
+
+			<div class="login">
+
+				<!-- Creating Input fields for mobile no. and otp  -->
+
+				<div class="login-form">
+					<center>
+						<form>
+
+							<h2>Login</h2>
+
+							<div class="input-icons">
+								<i class="fa fa-user icon"></i>
+								<input class="input-field" id="input-field" type="text" placeholder="Mobile No. /Email">
+							</div>
+
+
+							<div class="input-icons">
+								<i class="fa fa-key icon"></i>
+								<input class="input-field" id="input-field" type="password" placeholder="OTP">
+							</div>
+
+							<!-- Adding sign-in button -->
+
+							<div class="signin">
+								<button>
+									Sign-In
+								</button>
+						</form>
+					</center>
+				</div>
+
+				<!-- Creating right part of login and adding style -->
+			</div>
+			<div style="display: flex; 
+                        align-items: center; 
+                        justify-content: space-evenly;
+                        margin: 1vw;
+                        margin-top: 5vw;
+
+                        line-height: 1vw;    
+                        ">
+				<p>
+					<hr style="width:50%; 
+                                background-color: black; 
+                                text-align:left; 
+                                margin-left: 2vw; 
+                                margin-right: 2vw;
+                                height: 2px; 
+                                border-width: 0px;">
+
+					<span style="font-size: 3vh;">or</span>
+
+					<hr style="width:50%; 
+                            background-color: black; 
+                            text-align:right; 
+                            margin-left: 2vw; 
+                            margin-right: 2vw;
+                            height: 2px; 
+                            border-width: 0px;">
+				</p>
+
+			</div>
+
+			<!-- Container that contain other option to login -->
+
+			<div class="other-login-options">
+
+				<!-- Option to login with google -->
+
+				<div class="login-google">
+					<div class="google-icon">
+						<a href="#"><img src="{{url_for('static', filename='/assets/login-images/')}}google.png"
+								alt="google-icon"></a>
+					</div>
+					<p> Continue with Google </p>
+				</div>
+
+				<!-- Option to login with facebook -->
+
+				<div class="login-facebook">
+					<div class="facebook-icon">
+						<a href="#"><img src="{{url_for('static', filename='/assets/login-images/')}}facebook.png"
+								alt="facebook-icon"> </a>
+					</div>
+					<p> Continue with Facebook </p>
+				</div>
+
+			</div>
+
+			<!-- Other options -->
+			<div class="other-options">
+				<a href="#">Sign-in</a>
+				|
+				<a href="#">Emergency</a>
+			</div>
+
+			<!-- Chat options -->
+
+			<div class="chat">
+
+				<div>
+					<a href="#"><img src="{{url_for('static', filename='/assets/login-images/')}}whatsapp.png"
+							alt="whatsapp"></a>
+				</div>
+				<div style="box-shadow: 0 4px 10px rgb(0 0 0 / 0.6);">
+					<a href="#"><img src="{{url_for('static', filename='/assets/login-images/')}}chats.png"
+							alt="chat"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		// to make navbar size change on scroll
+
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+				document.getElementById("navbar").style.height = "2.75rem";
+				document.getElementById("logo1").style.height = "2.75rem";
+
+			} else {
+				document.getElementById("navbar").style.height = "3rem";
+				document.getElementById("logo1").style.height = "3.25rem";
+
+			}
+		}
+
+
+		// to make ham menu responsive
+
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function () {
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+				? "fa-solid fa-xmark"
+				: "fa-solid fa-bars"
+		}
+
+		// to clear input field on refresh and on clicking on any thing
+		window.onload = function () {
+			document.getElementById('input-field').value = '';
+		}
+
+
+	</script>
+
+</body>
+
+</html>
