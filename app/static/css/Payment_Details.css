@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@700&family=Kadwa:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #faebeb;
+  font-family: "Jaldi", sans-serif;
+}
+ /* Nav Bar */
+.top-nav {
+  box-shadow: 0px 2px 10px black;
+}
+.bgc {
+  height: 30px;
+  padding: 10px;
+  transition: 0.15s;
+}
+.ambu-logo-img {
+  height: auto;
+  margin-top: 10px;
+  width: 180px;
+}
+.ambu-logo-img img {
+  height: auto;
+  width: 165px;
+}
+.ambu-logo-img img:hover {
+  cursor: pointer;
+}
+.menu-button {
+  margin-right: 40px;
+}
+.top-nav {
+  align-items: center;
+  background-color: #090a0a;
+  background: white;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+  justify-content: space-between;
+  left: 0;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+.menu {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+abbr {
+  text-decoration: none;
+}
+.menu li {
+  list-style-type: none;
+  padding: 20px;
+  text-align: center;
+}
+.menu li a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: 'Jaldi',sans-serif;
+  text-decoration: none;
+}
+ul form select:hover {
+  cursor: pointer;
+}
+.menu .link:hover {
+  background-color: rgb(228, 222, 222);
+  border-radius: 0px;
+  height: 23px;
+  scale: 1.5;
+  transition: 0.15s;
+}
+.form-header select{
+  background-color: #d9d6d6;
+  border-radius: 10px;
+  height: 25px;
+  width: 120px;
+}
+.form-section select {
+  height: 20px;
+  width: 150px;
+}
+abbr i:hover {
+  cursor: pointer;
+}
+.profile-img {
+  height: 50px;
+  margin: 28px 40px 0px 30px;
+  width: 50px;
+}
+.profile-img:hover {
+  cursor: pointer;
+}
+.menu > li {
+  margin: 20px 10px;
+  overflow: hidden;
+}
+.menu-button-container {
+  align-items: center;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 30px;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  background-color: black;
+  border-radius: 2px;
+  display: block;
+  height: 4px;
+  position: absolute;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  width: 30px;
+}
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+/* media query for mobile devices for nav Bar */
+@media (max-width: 810px) {
+.menu-button-container {
+  display: flex;
+}
+.profile-img {
+  display: none;
+}
+.menu {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin-top: 45px;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  z-index: 1000;
+}
+.menu .link:hover {
+  background-color: black;
+}
+.bgc {
+  height: 30px;
+  padding: 10px;
+  transition: 0.15s;
+}
+.logo img{
+  height: auto;
+  padding-left: 2px;
+  padding-top: 8px;
+  width: 130px;
+}
+.ambu-logo-img {
+  margin-top: 4px;
+}
+.menu-one {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin-top: 25px;
+  position: absolute;
+  top: 26px;
+  width: 100%;
+  z-index: 1000;
+}
+.menu li a {
+  color: white;
+}
+.menu > li a:hover {
+  color: cyan;
+  scale: 1.1;
+  transition: 0.15s;
+}
+#menu-toggle ~ .menu li {
+  border: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+#menu-toggle:checked ~ .menu li {
+  border: 1px solid #333;
+  height: 2.5em;
+  padding: 1.5rem 0 0 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu > li {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+}
+/*navbar ends here*/
+/* main body starts here */
+.main{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  padding-bottom: 3%;
+}
+#card{
+  max-width: 40vw;
+}
+.card-details{
+  background-color: #ffffff;
+  border-color:#000;
+  border-radius: 1.5rem;
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  padding-left: 2%;
+  width: 45%;
+}
+.input-field{
+  border-color: #000;
+  border-radius: .5rem;
+  padding-left: 1%;
+}
+#heading{
+  font-size: xxx-large;
+  font-weight: bold;
+  padding-right: 20%;
+}
+#name{
+  font-size: xx-large;
+  height: 15%;  
+  width: 80%;
+}
+#mobile{
+  font-size: xx-large;
+  margin-right: 25%;
+  height: 15%;
+  width: 60%;
+}
+#month{
+  font-size: xx-large;
+  height: 15%;
+  margin-right:2% ;
+  width: 32%;
+}
+#number{
+  font-size: xx-large;
+  height: 15%;
+  margin-right: 40%;
+  width: 25%;
+}
+.pay-now{
+  background-color: #2e408e;
+  border-radius: .5rem;
+  color: #fff;
+  font-size: x-large;
+  font-weight: bolder;
+  height: 15%;
+  margin-right: 2%;
+  transition: 0.15s;
+  width: 35%;
+}
+.pay-now:hover{
+  opacity: .85;
+}
+.pay-now:active{
+  opacity: .6;
+}
+.cancel{
+  border-radius: .5rem;
+  height: 15%; 
+  font-size: x-large;
+  transition: 0.15s;
+  width: 30%;
+}
+.cancel:hover{
+  opacity: .6;
+}
+.cancel:active{
+  opacity: .4;
+}
+button:hover{
+  cursor: pointer;
+}
+.timeline-text{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8%;
+}
+.timeline-text a{
+  color: #000;
+  font-family: 'Jaldi',sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.timeline-status {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* media query for mobile view */
+@media only screen and (max-width: 836px) {
+.timeline-text a{
+  font-size: larger;
+  margin-left: 5%;
+  margin-top: 6%;
+}
+.main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#heading{
+  font-size: x-large;
+}
+#name{
+  font-size: large;
+  width: 80%;
+}
+#mobile{
+  font-size: large;
+  width:80%;
+}
+#month{
+  font-size: large;
+}
+#number{
+  font-size: large;
+}
+.card-details{ 
+  height: 200px;
+  width: 60%;
+}
+.pay-now{
+  font-size:1rem;
+  width: 40%;
+}
+.cancel{
+  font-size: large;
+  width: 35%;
+}
+}
+/* Main body part ends here */
+/* footer section css code starts here*/
+.footer {
+  background-image: linear-gradient(#0f2831, #37414c, #5361a6);
+  position: relative;
+}
+/* footer header */
+.footer-header {
+  display: flex;
+  justify-content: center;
+}
+.ambu-footer-quote h3{
+  color: white;
+  font-size: 0.8em;
+  font-size: 10px;
+  margin: 8px 0px 8px 0px;
+  text-align: center;
+}
+/* download from appstore and playstore*/
+.download {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+.download img {
+  margin-right: 0px;
+}
+.download .appstore img {
+  height: auto;
+  width: 200px;
+}
+.download .playstore {
+  margin-top: 63px;
+}
+.download .playstore img {
+  height: 65px;
+  width: 180px;
+}
+/* copy right section*/
+.copyright {
+  color: white;
+  font-size: 1vw;
+  padding: 5px;
+}
+.contact-us img:hover {
+  cursor: pointer;
+}
+.connect img:hover {
+  cursor: pointer;
+  scale: 1.3;
+  transition: 0.15s;
+}
+.download img:hover {
+  cursor: pointer;
+}
+/* different ViewPorts media queries */
+/* for mobile */
+@media only screen and (max-width: 600px) {
+.footer-header img {
+  height: 20px;
+  margin: 4px 3px 0px 0px;
+  width: 20px;
+}
+.footer-header .ambu-footer-quote h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+/* us section for mobile devices */
+.us {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 5px;
+}
+.us a {
+  color: white;
+  padding-left: 5px;
+  text-decoration: none;  
+}
+.us p {
+  font-size: 0.7em;
+}
+.us p a:hover {
+  box-shadow: 1px 1px  black;
+  scale: 2;
+  transition: 0.15s;
+}
+/* Know us section for mobile devices */
+.us .know-us {
+  flex: 25%;
+}
+.us h2 {
+  font-size: 0.9em;
+}
+.us img {
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+/* services section for mobile devices */
+.us .services {
+  flex: 25%;
+}
+/* contact us section for mobile devices */
+.us .contact-us {
+  flex: 40%;
+}
+.address abbr {
+  display: flex;
+  margin: 0px 0px;
+}
+.mail abbr {
+  display: flex;
+  margin: 0px 0px;
+}
+.phone abbr {
+  display: flex;
+  margin: 0px 0px;
+}
+.phone img {
+  margin-top: 5px;
+}
+/* connect from us section for mobile devices */
+.connect p {
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.connect .icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.connect img {
+  width: 25px;
+  height: auto;
+}
+/* download our app section for mobile devices */
+.download .appstore img {
+  border-radius: 5px;
+  height: 38px;
+  margin-right: 10px;
+  margin-top: 7px;
+  width: 120px;
+}
+.download .playstore {
+  margin-top: 0px;
+}
+.download .playstore img {
+  border-radius: 4px;
+  height: 46px;
+  width: 125px;
+}
+.copyright {
+  font-size: 10px;
+}
+}
+@media only screen and (min-width: 601px) {
+.footer-header img {
+  height: 30px;
+  margin: 12px 3px 0px 0px;
+  width: 30px;
+}
+.footer-header .ambu-footer-quote h3 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 2px;
+}
+/* contact us section for viewport bigger than mobile */
+.us {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 5px;
+}
+.us a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.us p {
+  font-size: 1em;
+}
+.us p a:hover {
+  box-shadow: -1px 2px 1px black;
+  scale: 2;
+  transition: 0.15  s;
+}
+.us .know-us {
+  flex: 35%;
+}
+.us h2 {
+  font-size: 1.2em;
+}
+.us img {
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+.us .services {
+  flex: 35%;
+}
+.us .contact-us {
+  flex: 35%;
+}
+ .address abbr {
+  display: flex;
+  margin: 0px 0px;
+}
+.mail abbr {
+  display: flex;
+  margin: 0px 0px;
+}
+.phone abbr {
+  display: flex;
+  margin: 0px 0px;
+}
+.phone img {
+  margin-top: 5px;
+}
+.connect p {
+  color: white;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  margin: 10px 0px;
+  text-align: center;
+}
+.connect .icons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.connect img {
+  height: auto;
+  width: 30px;
+}
+.connect .first-icon {
+  margin: 0px 40px;
+}
+.connect .second-icon {
+  margin: 0px 40px;
+}
+.connect .third-icon {
+  margin: 0px 40px;
+}
+.connect .fourth-icon {
+  margin: 0px 40px;
+}
+.download .appstore img {
+  border-radius: 5px;
+  height: 38px;
+  margin-right: 10px;
+  margin-top: 7px;
+  width: 120px;
+}
+.download .playstore {
+  margin-top: 0px;
+}
+.download .playstore img {
+  border-radius: 4px;
+  height: 46px;
+  width: 125px;
+}
+.copyright {
+  font-size: 15px;
+}
+}
+/* CSS Code Ends here */

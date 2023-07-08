@@ -10,5 +10,6 @@ def create_app():
     app.register_blueprint(controllers.get_index_bp)
     app.register_blueprint(controllers.get_Sign_Up)
     app.register_blueprint(controllers.get_about_page_bp)
+    app.register_blueprint(controllers.get_Payment_Details)
 
     return app
