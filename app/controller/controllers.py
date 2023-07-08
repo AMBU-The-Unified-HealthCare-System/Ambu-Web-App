@@ -26,7 +26,7 @@ def index():
     # Render Sign_Up.html
     return render_template('about-page.html')
 
-@get_Payment_Details.rout('/Payment_Details')
+@get_Payment_Details.route('/Payment_Details')
 def index():
     # Render Payment_Details.html
     return render_template('Payment_Details')
