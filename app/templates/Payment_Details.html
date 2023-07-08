@@ -1,0 +1,189 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<!-- Link for Stylesheet that contains the css link -->
+<link rel="stylesheet" href="..\static\css\Payment_Details.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet"/>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<title>Payment Details</title>
+</head>
+<body>
+<!-- <div id="container"> -->
+<!-- Nav Bar which contains all the navigations -->
+<header class="top-nav" id="navbar">
+  <div class="ambu-logo-img">
+    <abbr title="Company Logo">
+      <div class="logo">
+        <img src="..\static\assets\Payment_Details-images\AMBU logo.png" alt="" class="logo-img"/>
+      </div>
+    </abbr>
+  </div>
+  <input id="menu-toggle" type="checkbox" />
+  <label class="menu-button-container" for="menu-toggle">
+    <div class="menu-button"></div>
+  </label>
+  <ul class="menu">
+    <li class="link">
+      <a href=""><abbr title="Home">HOME</abbr></a>
+    </li>
+    <li class="link">
+      <a href=""><abbr title="About">ABOUT</abbr></a>
+    </li>
+    <li class="link">
+      <a href=""><abbr title="Services">SERVICES</abbr></a>
+    </li>
+    <li class="form-header">
+      <select name="language" class="language">
+        <option value="English">English</option>
+        <option value="Hindi">हिन्दी</option>
+        <option value="Tamil">தமிழ்</option>
+      </select>
+    </li>
+    <abbr title="User Profile Img">
+      <img src="..\static\assets\Payment_Details-images\profile-img.png" alt="" class="profile-img"/>
+    </abbr>
+  </ul>
+</header>
+<!-- Nav bar section Ends Here -->
+<!-- Main body starts here -->
+<div class="timeline-text">
+  <a href="#">Booking Details</a>
+  <a href="#">Route Details</a>
+  <a href="#">Payment Details</a>
+  <a href="#" style="color: rgb(141, 141, 141);">Payment Complete</a>
+</div>
+<div class="timeline-status">
+  <a href="#"><i class="fa fa-check fa-lg" style="color: rgb(69, 138, 0);"></i></a>
+  <hr style="width: 19%;height: 2px;background-color: grey; margin-top: .5%;margin-left:.5%;margin-right: .5%;">
+  <a href="#"><i class="fa fa-check fa-lg" style="color: rgb(69, 138, 0);"></i></a>
+  <hr style="width: 19%;height: 2px;background-color: grey;margin-top: .5%;margin-left:.5%;margin-right: .5%;">
+  <a href="#"><i class="fa fa-circle fa-lg" style="color: #000;"></i></a>
+  <hr style="width: 21%;height: 2px;background-color: grey;margin-top: .5%;margin-left:.5%;margin-right: .5%;">
+  <a href="#"><i class="fa fa-circle-o fa-lg" style="color: #000;"></i></a>
+</div>
+<div class="main">
+  <img src="..\static\assets\Payment_Details-images\credit card.png" id="card" alt="">
+  <div class="card-details">
+    <p id="heading">Payment Details</p>
+    <input class="input-field" id="name" type="text" placeholder="Cardholder Name">
+    <input class="input-field" id="mobile" type="tel" placeholder="Card Number">
+    <input class="input-field" id="month" type="month" placeholder="month">
+    <input class="input-field" id="number" type="text" placeholder="CVV">
+    <button class="pay-now">PAY NOW</button>
+    <button class="cancel">Cancel</button>
+  </div>
+</div>
+<!-- Main body part ends here -->
+<!-- Footer Section -->
+<div class="footer">
+  <!-- Footer Main Header Section -->
+  <div class="footer-header">
+    <div class="footer-img">
+      <img src="..\static\assets\Payment_Details-images\india.png" alt="" />
+    </div>
+    <!-- footer quote -->
+    <div class="ambu-footer-quote">
+      <h3>India's First Unified Health Care Software</h3>
+    </div>
+  </div>
+  <!-- Reach Us section -->
+  <div class="us">
+    <div class="know-us">
+      <h2>Know Us</h2>
+      <p><a href="#">HOME</a></p>
+      <p><a href="#">Profile</a></p>
+      <p><a href="#">About Us</a></p>
+      <p><a href="#">Services</a></p>
+    </div>
+    <div class="services">
+      <h2>Services</h2>
+      <p><a href="#">ALS Ambulance</a></p>
+      <p><a href="#">BLS Ambulance</a></p>
+      <p><a href="#">PTS Ambulance</a></p>
+      <p><a href="#">Mortality Ambulance</a></p>
+    </div>
+    <div class="contact-us">
+      <h2>Contact Us</h2>
+      <div class="address">
+        <abbr title="Company address">
+          <img src="..\static\assets\Payment_Details-images\google-maps.png" alt="" />
+        <p><a href="#" class="add">XYZ ABC Technology Business Incubation Uttar Pradesh India</a></p></abbr>
+      </div>
+      <div class="mail">
+        <abbr title="Comapany email-Id">
+          <img src="..\static\assets\Payment_Details-images\gmail.png" alt=""
+        />
+        <p><a href="#">ambu272008@gmail.com</a></p></abbr> 
+      </div>
+      <div class="phone">
+        <abbr title="Company contact number">
+          <img src="..\static\assets\Payment_Details-images\telephone.png" alt=""
+        />
+        <section>
+          <p><a href="#">9856473456</a></p>
+          <p><a href="#">6885647375</a></p>
+        </section></abbr>
+      </div>
+    </div>
+  </div>
+  <!-- Connect Us Section -->
+  <div class="connect">
+    <p>Connect With Us</p>
+    <div class="icons">
+      <abbr title="instagram" class="first-icon">
+        <a href="#"><img src="..\static\assets\Payment_Details-images\instagram.png" alt="" /></a>
+      </abbr>
+      <abbr title="whatsapp"  class="second-icon">
+        <a href="#"><img src="..\static\assets\Payment_Details-images\whatsapp.png" alt="" /></a>
+      </abbr>
+      <abbr title="twitter" class="third-icon">
+        <a href="#"><img src="..\static\assets\Payment_Details-images\twitter.png" alt="" /></a>
+      </abbr>
+      <abbr title="linkedin" class="fourth-icon">
+        <a href="#"><img src="..\static\assets\Payment_Details-images\linkedin.png" alt="" /></a>
+      </abbr>
+    </div>
+  </div>
+  <!-- Download section -->
+  <div class="download">
+    <div class="appstore">
+    <abbr title="app-store">
+        <img src="..\static\assets\Payment_Details-images\app-store.jpg" alt=""
+      />
+    </abbr>
+    </div>
+    <div class="playstore">
+    <abbr title="play-store">
+        <img src="..\static\assets\Payment_Details-images\play-store.png" alt=""
+      />
+    </abbr>
+    </div>
+  </div>
+  <!-- Copyright Section -->
+  <div class="copyright">
+    <p>copyright @2023 AMBU Organisation</p>
+  </div>
+</div>
+<!-- HTML code Ends Here -->
+<!-- JavaScript code begins from here -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function () {
+  $(window).on('scroll', function() {
+    if ($(window).scrollTop()) {
+          $("header").addClass("bgc", "logo img", "menu-one");
+          $(".menu").addClass("menu-one");
+    }else {
+          $("header").removeClass("bgc", "logo img", "menu-one");
+          $(".menu").removeClass("menu-one");
+    }
+  });
+});
+</script>
+</body>
+</html>
