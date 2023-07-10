@@ -1,0 +1,1 @@
+All the Xassets, i.e images and videos should be placed in this file.
