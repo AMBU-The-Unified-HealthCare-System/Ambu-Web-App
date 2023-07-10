@@ -4,6 +4,19 @@ import json
 import requests
 
 get_index_bp = Blueprint('index', __name__)
+get_our_services_bp = Blueprint('our-services', __name__)
+
+@get_index_bp.route('/')
+def index():
+           # Render index.html
+           return render_template('index.html')
+
+
+ @get_our_services_bp.route('/our-services')   
+def index():
+    # Render our-services.html
+    return render_template('our-services.html')      
+
 get_Sign_Up = Blueprint('Sign_Up', __name__)
 get_about_page_bp = Blueprint('about_page', __name__)
 
@@ -24,3 +37,4 @@ def index():
 def index():
     # Render Sign_Up.html
     return render_template('about-page.html')
+ 
