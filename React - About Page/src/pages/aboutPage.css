@@ -1,0 +1,994 @@
+/* i use the meedia Query for the responsive design for the phone */
+/* first media query:- for the width bigger than 800 px */
+/* second media query:- for the width lesser than 800px */
+/* third media query:- for the width less that 1032 px and greater than 768 px */
+/* last for the width less than 426px */
+/* all the media query is at the last of the css code accordingly */
+
+/* external url for the fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Kadwa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Kalam:wght@300&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* predefineing the colors for our webpages */
+
+:root {
+    --bg-color: #fff;
+    --text-color: #000000;
+    --main-color: #29fd53;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* for hide side scrollbar icon */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* navbar section */
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Adding style to navbar */
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar styling */
+
+/* navbar basic styling */
+
+/* main header company section that contains the company image and name */
+
+.home {
+    position: relative;
+    display: flex;
+    color: #000000;
+    min-height: 100vh;
+    background-size: cover;
+    background-position-y: 0px;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.company h1 {
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    font-size: 120px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: kadwa;
+    text-shadow: 2px 2px red;
+}
+
+.company-quote {
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    left: 0;
+    right: 0;
+    padding-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px red;
+}
+
+/* company's feature */
+
+.main_heading {
+    display: grid;
+    place-items: center;
+    font-family: "Kaisei Decol", serif;
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 45px;
+}
+
+/* about us section that contain the small description about us */
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+.about img {
+    display: none;
+}
+
+/* main text that contains about us */
+
+.about h1 {
+    text-align: center;
+    color: #000;
+    font-family: Kadwa;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 80px;
+    text-shadow: 0 0 3px rgb(97, 199, 247);
+}
+
+.about p {
+    position: relative;
+    margin-top: 30px;
+    background: rgb(16, 203, 253);
+    background: linear-gradient(
+        90deg,
+        rgba(16, 203, 253, 1) 0%,
+        rgba(0, 212, 255, 1) 0%,
+        rgba(17, 9, 121, 1) 100%
+    );
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 65vh;
+    font-family: "Kalam", cursive;
+    width: 45%;
+    font-size: 32px;
+    left: 55%;
+    overflow-y: auto;
+}
+
+/* quotes of our company's */
+
+.quotes p {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 200%;
+    color: #ff0000;
+}
+
+/* who we are */
+
+.about-we {
+    position: relative;
+    display: flex;
+    color: #000000;
+    min-height: 100vh;
+    background-size: cover;
+    background-position-y: 0px;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.about-text h1 {
+    color: rgb(5, 99, 161);
+}
+
+/* main text that contains who we are */
+
+.about-we-text {
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    height: 90%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #b6c7d6;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    font-family: kadwa;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.about-we-text h2 {
+    font-size: 50px;
+    padding: 10px 0 40px 0;
+    color: rgb(5, 99, 161);
+}
+
+.about-we img {
+    width: 100%;
+}
+
+.who-we-are-text {
+    padding: 0 110px 0;
+}
+
+/* why choose us */
+
+.choose-us {
+    color: rgb(5, 99, 161);
+    font-family: kadwa;
+}
+
+/* main text and images that contains why choose us */
+
+.choose-us .choose-text {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}
+
+.choose-us h2 {
+    font-size: 50px;
+}
+
+.choose-us .choose-img {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 50px 0;
+}
+
+.choose-img img:hover {
+    animation-name: slideUp;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-duration: 1s;
+    visibility: visible;
+    cursor: pointer;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.img-one img {
+    width: 120px;
+}
+
+.img-two p {
+    width: 250px;
+    margin-top: 15px;
+}
+.img-two img {
+    width: 180px;
+}
+.img-three img {
+    width: 100px;
+    padding-top: 20px;
+}
+.img-four img {
+    width: 120px;
+}
+
+/* Meet our team */
+
+.animate-char {
+    margin-top: 100px;
+    font-family: kadwa;
+    text-align: center;
+    font-size: 40px;
+}
+
+.animate-char {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+main {
+    position: relative;
+    width: calc(min(93rem, 84%));
+    margin: 0 auto;
+    min-height: 80vh;
+    column-gap: 3rem;
+    padding-block: min(11vh, 10rem);
+}
+
+/* .try {
+    background: url("./about-page-images/Untitled\ design.png") no-repeat center;
+}
+
+main div span {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    color: #717171;
+}
+
+main div p {
+    line-height: 1.6;
+}
+
+main a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #717171;
+    font-weight: 500;
+    background: #a2c3ee;
+    border-radius: 3.125rem;
+    transition: 0.3s ease-in-out;
+}
+
+main div a {
+    border: 2px solid #c2c2c2;
+    margin-top: 2.188rem;
+    padding: 0.625rem 1.875rem;
+}
+
+main div a:hover {
+    border: 0.125rem solid #005baa;
+    color: #005baa;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 3.125rem;
+    height: 64vh;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+.swiper-pagination {
+    bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+    width: 18.75rem;
+    height: 28.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: self-start;
+}
+
+.swiper-slide h2 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 0.625rem;
+    padding: 0 0 0 1.563rem;
+    text-transform: uppercase;
+}
+.swiper-slide p {
+    color: #dadada;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    padding: 0 1.563rem;
+    line-height: 1.6;
+    font-size: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 59vh;
+}
+
+.swiper-slide a {
+    font-size: 0.9rem;
+    margin-top: 55vh;
+    display: table-header-group;
+}
+
+.swiper-slide a:hover {
+    color: #005baa;
+}
+
+.swiper-slide div {
+    display: none;
+    opacity: 0;
+    padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+    display: block;
+    opacity: 1;
+}
+
+.swiper-slide--one {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("./about-page-images/yashsir.jpg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("./about-page-images/yashsir.jpg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("about-page-images/yashsir.jpg") no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("./about-page-images/yashsir.jpg") no-repeat 50% 50%;
+}
+
+.swiper-slide--five {
+    background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        url("./about-page-images/yashsir.jpg") no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+    main {
+        display: flex;
+    }
+    .bg,
+    .bg2 {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 93.75rem) {
+    .swiper {
+        width: 85%;
+    }
+} */
+
+/* different ViewPorts media queries */
+
+/* media query for the footer section */
+
+/* for mobile */
+
+@media only screen and (max-width: 600px) {
+    /* connect from us section */
+
+    .connect p {
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .connect .icons {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .connect img {
+        height: auto;
+        width: 25px;
+    }
+}
+
+/* for desktop */
+
+@media (min-width: 601px) {
+    /* connect us section */
+
+    .connect p {
+        color: white;
+        font-size: 1.4em;
+        letter-spacing: 2px;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .connect .icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .connect img {
+        height: auto;
+        width: 30px;
+    }
+
+    .connect .first-icon {
+        margin: 0px 40px;
+    }
+
+    .connect .second-icon {
+        margin: 0px 40px;
+    }
+
+    .connect .third-icon {
+        margin: 0px 40px;
+        /* font-size: 40px; */
+    }
+
+    .connect .third-icon:hover {
+        margin: 0px 40px;
+        /* font-size: 40px; */
+    }
+
+    .connect .fourth-icon {
+        margin: 0px 40px;
+    }
+
+    /* copyright section */
+}
+
+/* media query for other section for mobile */
+
+@media (max-width: 800px) {
+    /* media query for the company */
+
+    .company p {
+        background-color: rgba(7, 7, 7, 0.4);
+        color: #fff;
+    }
+
+    .company img {
+        opacity: 0.8;
+        margin-top: 17%;
+    }
+
+    /* media query for the feature section */
+
+    .main_heading {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    /* media query for the about us section */
+
+    .about .about-text p {
+        position: relative;
+        margin: 10px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    /* media queries for who we are */
+
+    /* who we are */
+
+    .who-we-are-text {
+        padding: 0;
+    }
+
+    .choose-us .choose-img {
+        display: block;
+    }
+
+    .choose-us .img-two p {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* media query for meet us */
+
+    .meet-us h2 {
+        font-size: 20px;
+    }
+
+    .meet-us p {
+        font-size: 12px;
+    }
+
+    /* media query for our partners */
+
+    .our-partners h1 {
+        font-size: 30px;
+    }
+
+    .our-partners .partners-logo .logo-one {
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* comapny image and heading section  */
+
+    .main_heading {
+        font-size: 40px;
+    }
+
+    /* quotes section */
+
+    .quotes p {
+        font-size: 25px;
+    }
+
+    /* about heading section  */
+    .about h1 {
+        font-size: 60px;
+    }
+
+    /* us section */
+    .us p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 426px) {
+    /* main heading of the page that contain our company name */
+    .main_heading {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    /* company"s main quote section */
+    .quotes p {
+        font-size: 16px;
+    }
+
+    /* why choose us section */
+    .choose-text h2 {
+        font-size: 40px;
+    }
+
+    .choose-text p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 2560px) {
+    .company h1 {
+        font-size: 10rem;
+    }
+    .company-quote {
+        padding-top: 1.5%;
+    }
+
+    .about-text h1 {
+        font-size: 6rem;
+    }
+    .about p {
+        font-size: 3rem;
+    }
+    .quotes p {
+        font-size: 3rem;
+    }
+    .about-we-text h2 {
+        font-size: 4rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .company h1 {
+        font-size: 10rem;
+    }
+    .company-quote {
+        padding-top: 1.5%;
+    }
+
+    .about-text h1 {
+        font-size: 6rem;
+    }
+    .about p {
+        font-size: 2rem;
+    }
+    .quotes p {
+        font-size: 3rem;
+    }
+    .about-we-text h2 {
+        font-size: 4rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .company h1 {
+        font-size: 10rem;
+    }
+    .company-quote {
+        padding-top: 1.5%;
+    }
+
+    .about-text h1 {
+        font-size: 6rem;
+    }
+    .about p {
+        font-size: 2rem;
+    }
+    .quotes p {
+        font-size: 3rem;
+    }
+    .about-we-text h2 {
+        font-size: 4rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .company h1 {
+        font-size: 8rem;
+        top: 35%;
+    }
+    .company-quote {
+        padding-top: 1.5%;
+    }
+
+    .about-text h1 {
+        font-size: 6rem;
+    }
+    .about p {
+        font-size: 2rem;
+    }
+    .quotes p {
+        font-size: 3rem;
+    }
+    .about-we-text h2 {
+        font-size: 4rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .company h1 {
+        font-size: 8rem;
+        top: 35%;
+    }
+    .company-quote {
+        padding-top: 4%;
+    }
+
+    .about-text h1 {
+        font-size: 4rem;
+    }
+    .about p {
+        font-size: 1.75rem;
+    }
+    .quotes p {
+        font-size: 2.4rem;
+    }
+    .about-we-text h2 {
+        font-size: 4rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 590px) and (max-width: 767px) {
+    .company h1 {
+        font-size: 5rem;
+        top: 40%;
+    }
+    .company-quote {
+        padding-top: 3%;
+        font-size: 1.5rem;
+    }
+
+    .about-text h1 {
+        font-size: 4rem;
+    }
+    .about p {
+        font-size: 2rem;
+    }
+    .quotes p {
+        font-size: 2.4rem;
+    }
+    .about-we-text h2 {
+        font-size: 3.5rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 1.8rem;
+        line-height: 2.25rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 590px) {
+    .company h1 {
+        font-size: 5rem;
+        top: 40%;
+    }
+    .company-quote {
+        padding-top: 3%;
+        font-size: 1.5rem;
+    }
+
+    .about-text h1 {
+        font-size: 4rem;
+    }
+    .about p {
+        font-size: 2rem;
+    }
+    .quotes p {
+        font-size: 2.4rem;
+    }
+    .about-we-text h2 {
+        font-size: 2.6rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .company h1 {
+        font-size: 3rem;
+        top: 40%;
+    }
+    .company-quote {
+        padding-top: 3%;
+        font-size: 0.9rem;
+    }
+
+    .main_heading {
+        font-size: 1.3rem;
+    }
+
+    .about-text h1 {
+        font-size: 4rem;
+    }
+    .about p {
+        font-size: 2rem;
+    }
+    .quotes p {
+        font-size: 1.5rem;
+    }
+    .about-we-text h2 {
+        font-size: 2rem;
+        padding-top: 4rem;
+    }
+
+    .who-we-are-text {
+        font-size: 1.4rem;
+        line-height: 1.75rem;
+    }
+
+    .choose-us h2 {
+        font-size: 4rem;
+    }
+}

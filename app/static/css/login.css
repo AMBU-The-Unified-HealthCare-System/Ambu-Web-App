@@ -1,0 +1,584 @@
+/* Setting default font to website */
+
+body {
+    display: block;
+    font-family: "Kadwa", Calibri, serif;
+    margin: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    padding: 0;
+    position: relative;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Adding style to navbar */
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* navbar styling */
+header {
+    position: relative;
+}
+
+/* navbar basic styling */
+
+#navbar {
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 4px 4px;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    padding: 0 2% 0 0.5%;
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Ambu Logo styling */
+#logo img {
+    transition: 0.3s;
+}
+
+#logo1 {
+    height: 4rem;
+    margin-top: 1rem;
+}
+
+/* Right side header styling that contain about, home, sevices option */
+.right-header {
+    align-items: center;
+    display: flex;
+    gap: 0.9rem;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.links {
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: bold;
+    gap: 2.5rem;
+    text-shadow: 2px 2px 1px rgb(194, 183, 183);
+}
+/* hover effect on big screens */
+.links a:hover {
+    background-color: #808080;
+    border-radius: 0.7rem;
+    color: white;
+    padding: 0.25rem;
+    text-shadow: 2px 2px 1px rgb(199, 198, 198);
+}
+
+/* Language change style */
+.right-header-element select {
+    background-color: lightgrey;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 1px black;
+    padding: 3px 9px 3px 9px;
+    text-shadow: inherit;
+}
+
+.pic {
+    border-color: rgb(129, 129, 191);
+    border-radius: 1.25rem;
+    border-style: solid;
+    border-width: 0.125rem;
+    height: 2rem;
+}
+
+.toggle_btn {
+    cursor: pointer;
+    display: none;
+    font-size: 1.5rem;
+}
+
+/* Drop down list style which is visible on mobile */
+.dropdown_menu {
+    border-radius: 10px;
+    display: none;
+    height: 0px;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: fixed;
+    right: 1.5rem;
+    top: 4.5rem;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 200px;
+    z-index: 10;
+}
+
+.dropdown_menu li {
+    align-items: center;
+    display: flex;
+    font-size: 2.5vh;
+    justify-content: center;
+    padding: 0.7rem;
+}
+
+.dropdown_menu.open {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    height: fit-content;
+}
+
+.dropdown_menu li {
+    color: #3d4347;
+    position: relative;
+}
+
+.dropdown_menu li:after {
+    background-color: #535759;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    margin: 0 40% 4% 40%;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+    width: 20%;
+}
+
+.dropdown_menu li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* media query to make nav bar responsive */
+@media (max-width: 850px) {
+    #navbar .links,
+    #navbar .language {
+        display: none;
+    }
+
+    #navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+    .dropdown_menu a {
+        color: white;
+    }
+}
+
+@media (max-width: 500px) {
+    .dropdown_menu {
+        right: 2.5%;
+        width: 90%;
+    }
+
+    .dropdown_menu li {
+        padding-right: 10%;
+    }
+}
+
+/* Because we care part */
+
+.theme {
+    background-color: #fff;
+    background-color: #20b038;
+    border-radius: 1vw 0rem 0rem 1vw;
+    margin-top: 0.5rem;
+    position: fixed;
+    right: 0;
+    width: 4vw;
+}
+
+.theme p {
+    color: white;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin: 70% 0% 70% 0%;
+    padding: 4px 0px 0px 0px;
+    rotate: 180deg;
+    text-align: center;
+    writing-mode: vertical-rl;
+}
+
+/* media query to make above code responsive responsive */
+
+@media (max-width: 500px) {
+    .theme {
+        width: 3vh;
+    }
+
+    .theme p {
+        font-size: 1.8vh;
+    }
+}
+
+/* Main content that is display on the page */
+
+#content {
+    background-attachment: fixed;
+    background-image: url("/static/assets/login-images/operationBG.png");
+    background-size: cover;
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    margin-top: 3rem;
+    min-height: 100vh;
+    transition: 0.3s;
+}
+
+/* media query to make content responsive */
+@media (max-width: 500px) {
+    #content {
+        flex-direction: column;
+    }
+}
+
+/* Left side of main body  */
+
+.body-left {
+    flex: 1;
+    margin: 2.5rem;
+    margin-top: 3rem;
+}
+
+/* AMBU style */
+
+.body-left h1 {
+    color: #f8eeee;
+    font-size: 7vw;
+    line-height: 5vw;
+    text-shadow: -2px 2px 2px black;
+}
+
+/* Tagline */
+
+.body-left p {
+    color: #f8eeee;
+    font-size: 3vw;
+    line-height: 4vw;
+    text-shadow: -2px 2px 2px black;
+}
+
+/* Download button */
+
+.body-left button {
+    align-items: center;
+    border-radius: 2vw;
+    display: flex;
+    font-size: 2.3vw;
+    gap: 1vw;
+    justify-content: space-around;
+    margin-left: 1rem;
+    margin-top: 4vh;
+    padding: 15px;
+}
+
+.body-left button .download-app {
+    color: #e85a4f;
+    font-size: 2.3vw;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*  adding android to download button */
+
+.android img {
+    width: 2.3vw;
+}
+
+/* media query to make above code responsive responsive */
+
+@media (max-width: 500px) {
+    .body-left {
+        margin: 2rem;
+        margin-top: 1rem;
+    }
+    /* AMBU style */
+
+    .body-left h1 {
+        font-size: 7vh;
+
+        text-align: center;
+    }
+
+    /* Tagline */
+
+    .body-left p {
+        font-size: 3vh;
+        line-height: 3.5vh;
+        text-align: center;
+        text-shadow: -2px 2px 2px black;
+    }
+
+    /* Download button */
+    .download-btn {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .body-left button {
+        border-radius: 2vh;
+        font-size: 2.3vh;
+        margin-top: 1vh;
+        padding: 10px;
+    }
+
+    .body-left button .download-app {
+        color: #e85a4f;
+        font-size: 2.2vh;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    /*  adding android to download button */
+
+    .android img {
+        width: 2vh;
+    }
+}
+
+/* Right part of main body */
+
+.body-right {
+    align-content: center;
+    background-color: rgb(100, 227, 214, 0.8);
+    /* width: 50%; */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* Styling login form */
+
+.login {
+    display: flex;
+    justify-content: space-between;
+}
+
+form h2 {
+    font-size: 3vw;
+    margin-bottom: 0.9vw;
+    margin-top: 0.9vw;
+}
+
+.login-form {
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.icon {
+    color: black;
+    min-width: 2.5rem;
+    padding: 0.625rem;
+    text-align: center;
+}
+
+.input-field {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    padding: 0.625rem;
+    text-align: center;
+    width: 60%;
+}
+
+/* Styling input placeholder */
+
+.login-form input::placeholder {
+    color: rgb(68, 64, 64);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Sign-in button */
+
+.login-form .signin {
+    margin-top: 7vh;
+}
+
+.login-form .signin button {
+    background-color: #20b038;
+    border-radius: 1.5rem;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: max-content;
+    padding: 0.5rem;
+    width: 65%;
+}
+
+/* media query to make above code responsive responsive */
+
+@media (max-width: 500px) {
+    .body-right {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    form h2 {
+        font-size: 4vh;
+    }
+
+    .input-icons {
+        margin-left: -20%;
+    }
+
+    .input-icons i {
+        left: 5%;
+        position: relative;
+    }
+
+    .login-form input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    .login-form .signin {
+        margin-top: 4vh;
+    }
+}
+
+/* media query to make above code responsive responsive */
+
+@media (max-width: 800px) {
+    .input-icons {
+        margin-left: -20%;
+    }
+
+    .input-icons i {
+        left: 5%;
+        position: relative;
+    }
+
+    .login-form input::placeholder {
+        font-size: 1.2rem;
+    }
+
+    .login-form .signin {
+        margin-top: 4vh;
+    }
+}
+
+/* other login option using flex */
+
+.other-login-options {
+    display: flex;
+    justify-content: space-around;
+    line-height: 2rem;
+}
+
+.login-google,
+.login-facebook {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.1vw;
+    gap: 1rem;
+    justify-content: center;
+    line-height: 2.2vw;
+    margin-bottom: 0.5rem;
+}
+
+/* styling images of google and facebook */
+.google-icon img,
+.facebook-icon img {
+    margin-bottom: -1rem;
+    margin-left: 0rem;
+    width: 3.5vw;
+}
+
+.login-google p,
+.login-facebook p {
+    text-align: center;
+}
+
+/* signin and emergency button */
+
+.other-options {
+    display: flex;
+    font-size: 2.2vw;
+    font-weight: bold;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+/* Styling chat */
+.chat {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 0.5vw;
+}
+.chat img {
+    margin: 0.5rem;
+    width: 3.5vw;
+}
+
+/* media query to make above code responsive responsive */
+
+@media (max-width: 500px) {
+    .login-google,
+    .login-facebook {
+        font-size: 2.5vh;
+        line-height: 2.5vh;
+    }
+
+    /* styling images of google and facebook */
+    .google-icon img,
+    .facebook-icon img {
+        margin-bottom: -1rem;
+        margin-left: 0rem;
+        width: 2rem;
+    }
+
+    .other-options {
+        font-size: 3vh;
+    }
+
+    .chat img {
+        width: 2.5rem;
+    }
+}
